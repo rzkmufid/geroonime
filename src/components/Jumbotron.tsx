@@ -5,9 +5,9 @@ import { useFetchPopularAnimeKitsuQuery } from "../api/kitsuAPI";
 
 
 const Jumbotron: React.FC = () => {
-  const { 
-    data: popularAnime, 
-    isLoading: isLoadingPopular 
+  const {
+    data: popularAnime,
+    isLoading: isLoadingPopular
   } = useFetchPopularAnimeQuery();
 
 
@@ -170,7 +170,7 @@ const Jumbotron: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.5 }}
-                className="px-6 py-3 border border-white text-white rounded-lg"
+                className="px-6 py-3 border bg-black border-white text-white rounded-lg"
               >
                 More Info
               </motion.button>
